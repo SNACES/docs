@@ -145,16 +145,16 @@ added without worrying about the implementation details behind where these
 algorithms get input or store output. To this end, we revolve our system around three objects.</p>
 <a class="reference internal image-reference" href="_images/399-just-classes.png"><img alt="Alternative text" class="align-center" src="_images/399-just-classes.png" style="width: 150px;" /></a>
 <div class="admonition note">
-<p class="first admonition-title">Note</p>
-<p class="last">InputDAO: An abstract interface that is able to read from some datastore.</p>
+<p class="first admonition-title">InputDAO</p>
+<p class="last">An abstract interface that is able to read from some datastore.</p>
 </div>
 <div class="admonition warning">
-<p class="first admonition-title">Warning</p>
-<p class="last">OutputDAO: An abstract interface that is able to write to some datastore.</p>
+<p class="first admonition-title">OutputDAO</p>
+<p class="last">An abstract interface that is able to write to some datastore.</p>
 </div>
 <div class="admonition danger">
-<p class="first admonition-title">Danger</p>
-<p class="last">Process: At its core, what a process does is take input, process that input, and spit out an output. The Process object is modeled based on that idea. It has input and output fields, which are respectively InputDAO and OutputDAO objects. There are process methods that run the algorithm on the input. The result can then be stored into the appropriate data storage via the output Datastore interface.</p>
+<p class="first admonition-title">Process</p>
+<p class="last">At its core, what a process does is take input, process that input, and spit out an output. The Process object is modeled based on that idea. It has input and output fields, which are respectively InputDAO and OutputDAO objects. There are process methods that run the algorithm on the input. The result can then be stored into the appropriate data storage via the output Datastore interface.</p>
 </div>
 <div class="section" id="design-approach">
 <h3>Design Approach<a class="headerlink" href="#design-approach" title="Permalink to this headline">¶</a></h3>
